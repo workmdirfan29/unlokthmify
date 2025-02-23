@@ -1,6 +1,6 @@
 # UnlokThmify
 
-![UnlokThmify Theme](https://github.com/xshshahab/unlokthmify/blob/main/md_Img/unlokthmify.png)
+![UnlokThmify Theme](https://github.com/workmdirfan29/unlokthmify/blob/main/public/Banner.png)
 
 UnlokThmify is an open-source web application designed to offer a stylish collection of design themes to enhance your web experience. It provides an intuitive and customizable interface for managing and applying various themes, ensuring a unique and engaging user experience.
 
@@ -34,18 +34,16 @@ To get started with UnlokThmify, follow these steps:
 - Make sure you have Node.js installed, then run:
   ```bash
   npm install
-  ```
-  ```bash
+ 
   yarn install
-  ```
-  ```bash
+ 
   pnpm install
   ```
 
 5. **Create a new branch:**
 
    ```bash
-   git checkout -b feature-branch
+      git checkout -b feature-branch
    ```
 
 6. **Make your changes and commit them:**
