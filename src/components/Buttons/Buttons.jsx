@@ -21,7 +21,7 @@ const Buttons = () => {
         </div>
         <div
           id="right-box"
-          className="font-bold pt-16 text-center md:text-end leading-[12vw] md:leading-[7.5vw] text-[10vw] md:text-9xl"
+          className="font-bold pt-16 text-center md:text-end leading-[12vw] md:leading-[7.5vw] text-[10vw] md:text-[18vh]"
         >
           <h1 className="text-neutral-800">
             DESIGN <br className="md:hidden" /> WITH{" "}
