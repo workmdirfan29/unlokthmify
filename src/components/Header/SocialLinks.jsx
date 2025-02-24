@@ -6,7 +6,7 @@ const SocialLinks = () => {
   return (
     <>
       <a
-        href="https://twitter.com/xsh_shahab"
+        href="https://x.com/mdirfan_23"
         target="_blank"
         rel="noopener noreferrer"
         className="text-xl font-semibold cursor-pointer hover:underline"
@@ -14,7 +14,7 @@ const SocialLinks = () => {
         <FaXTwitter size={22} />
       </a>
       <a
-        href="https://github.com/xshshahab/unlokthmify"
+        href="https://github.com/workmdirfan29/unlokthmify"
         target="_blank"
         rel="noopener noreferrer"
         className="text-xl font-semibold cursor-pointer hover:underline"

@@ -56,10 +56,10 @@ const GettingStarted = () => {
             reach out to us:
           </p>
           <a
-            href="https://www.linkedin.com/in/mdshahabuddin82/"
+            href="https://www.instagram.com/sahil__ik"
             className="text-blue-500 hover:underline"
           >
-            Md Shahabuddin
+            Md Irfan
           </a>
         </section>
       </div>

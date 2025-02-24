@@ -12,9 +12,9 @@ const Updates = () => {
         <a
           className="text-sm text-slate-700 hover:text-sky-700 hover:font-bold"
           target="_blank"
-          href="https://x.com/xsh_shahab"
+          href="https://x.com/mdirfan_23"
         >
-          Twitter @xsh_shahab
+          Twitter @mdirfan_23
         </a>
       </div>
     </>

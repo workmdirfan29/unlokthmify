@@ -13,9 +13,8 @@ const Hero = () => {
           <span className="text-[13px]">New Collection ⚡️</span>
           <Link
             to="/pages/docs"
-            className={`flex items-center py-1 text-[13px] ${
-              isHovered ? "font-bold underline text-sky-600" : ""
-            }`}
+            className={`flex items-center py-1 text-[13px] ${isHovered ? "font-bold underline text-sky-600" : ""
+              }`}
             onMouseEnter={() => setIsHovered(true)}
             onMouseLeave={() => setIsHovered(false)}
           >
@@ -41,7 +40,7 @@ const Hero = () => {
         <div className="flex flex-col justify-center mt-4 space-y-4 md:flex-row md:space-y-0 md:space-x-4">
           <a
             target="_blank"
-            href="https://github.com/xshshahab/unlokthmify"
+            href="https://github.com/workmdirfan29/unlokthmify"
             className="flex items-center px-6 py-3 text-white transition duration-300 rounded-md bg-neutral-950 hover:bg-neutral-800"
           >
             Go to Github <FaArrowRight className="ml-2" />
