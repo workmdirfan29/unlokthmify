@@ -1,10 +1,17 @@
-// Header/MobileMenu.jsx
 import React from "react";
 import { NavLink } from "react-router-dom";
 import { FaTimes } from "react-icons/fa";
 import { RiMenu3Line } from "react-icons/ri";
 import SocialLinks from "./SocialLinks";
 import UnlokThmify from "../../assets/UnlokThmify.png";
+
+const navLinks = [
+  { to: "/pages/docs", label: "Docs" },
+  { to: "/pages/buttons", label: "Buttons" },
+  { to: "/pages/background", label: "Background" },
+  { to: "/pages/colors", label: "Colors" },
+  { to: "/pages/service", label: "Service" },
+];
 
 const MobileMenu = ({
   isMobileMenuOpen,
@@ -16,11 +23,8 @@ const MobileMenu = ({
   return (
     <>
       <div
-        className={`fixed top-0 right-0 z-50 bg-white flex flex-col items-start p-4 transition-transform duration-300 ease-in-out ${
-          isMobileMenuOpen
-            ? "transform translate-x-0"
-            : "transform translate-x-full"
-        }`}
+        className={`fixed top-0 right-0 z-50 bg-white flex flex-col items-start p-4 transition-transform duration-300 ease-in-out ${isMobileMenuOpen ? "translate-x-0" : "translate-x-full"
+          }`}
         style={{ width: "100%", height: "100vh" }}
       >
         <div className="flex items-center justify-between w-full">
@@ -39,50 +43,19 @@ const MobileMenu = ({
           </button>
         </div>
         <nav className="w-full mt-8">
-          <NavLink
-            to="/pages/docs"
-            className={({ isActive }) =>
-              `block mb-4 cursor-pointer ${
-                isActive ? "text-sky-700 font-bold" : "hover:underline"
-              }`
-            }
-            onClick={closeMobileMenu}
-          >
-            Docs
-          </NavLink>
-          <NavLink
-            to="/pages/buttons"
-            className={({ isActive }) =>
-              `block mb-4 cursor-pointer ${
-                isActive ? "text-sky-700 font-bold" : "hover:underline"
-              }`
-            }
-            onClick={closeMobileMenu}
-          >
-            Buttons
-          </NavLink>
-          <NavLink
-            to="/pages/background"
-            className={({ isActive }) =>
-              `block mb-4 cursor-pointer ${
-                isActive ? "text-sky-700 font-bold" : "hover:underline"
-              }`
-            }
-            onClick={closeMobileMenu}
-          >
-            Background
-          </NavLink>
-          <NavLink
-            to="/pages/colors"
-            className={({ isActive }) =>
-              `block mb-4 cursor-pointer ${
-                isActive ? "text-sky-700 font-bold" : "hover:underline"
-              }`
-            }
-            onClick={closeMobileMenu}
-          >
-            Colors
-          </NavLink>
+          {navLinks.map(({ to, label }) => (
+            <NavLink
+              key={to}
+              to={to}
+              className={({ isActive }) =>
+                `block mb-4 cursor-pointer ${isActive ? "text-sky-700 font-bold" : "hover:underline"
+                }`
+              }
+              onClick={closeMobileMenu}
+            >
+              {label}
+            </NavLink>
+          ))}
         </nav>
         <div className="flex items-center gap-3 p-2 mt-auto">
           <SocialLinks />

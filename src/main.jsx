@@ -9,8 +9,9 @@ import NotFound from "./components/Pages/NotFound.jsx";
 import Backgrounds from "./components/Backgrounds/Backgrounds.jsx";
 import Buttons from "./components/Buttons/Buttons.jsx";
 import GettingStarted from "./components/Docs/components/GettingStarted.jsx";
-import "./index.css";
 import Colors from "./components/Colors/Colors.jsx";
+import Service from "./Service/Service.jsx";
+import "./index.css";
 
 const router = createBrowserRouter([
   {
@@ -45,7 +46,10 @@ const router = createBrowserRouter([
         path: "/pages/colors",
         element: <Colors />,
       },
-
+      {
+        path: "/pages/service",
+        element: <Service />
+      },
       {
         path: "*",
         element: <NotFound />,
