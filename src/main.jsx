@@ -11,6 +11,7 @@ import Buttons from "./components/Buttons/Buttons.jsx";
 import GettingStarted from "./components/Docs/components/GettingStarted.jsx";
 import "./index.css";
 import Colors from "./components/Colors/Colors.jsx";
+import Service from "./service/Service.jsx"
 
 const router = createBrowserRouter([
   {
@@ -44,6 +45,10 @@ const router = createBrowserRouter([
       {
         path: "/pages/colors",
         element: <Colors />,
+      },
+      {
+        path: "/pages/service",
+        element: <Service />
       },
 
       {

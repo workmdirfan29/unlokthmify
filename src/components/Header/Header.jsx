@@ -1,9 +1,8 @@
 import React, { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
-import Logo from "./Logo";
 import DesktopNav from "./DesktopNav";
 import MobileMenu from "./MobileMenu";
-import SocialLinks from "./SocialLinks";
+import Logo from "./Logo";
 import "./Header.css";
 
 const Header = () => {
@@ -37,9 +36,8 @@ const Header = () => {
 
   return (
     <header
-      className={`fixed top-0 z-[50] w-full transition-all duration-300 ${
-        isScrolled ? "bg-white/30 backdrop-blur-lg shadow-lg" : "bg-transparent"
-      }`}
+      className={`fixed top-0 z-[50] w-full transition-all duration-300 ${isScrolled ? "bg-white/30 backdrop-blur-lg shadow-lg" : "bg-transparent"
+        }`}
     >
       <div className="flex items-center justify-between py-2 px-14">
         <Logo onClick={handleLogoClick} />
